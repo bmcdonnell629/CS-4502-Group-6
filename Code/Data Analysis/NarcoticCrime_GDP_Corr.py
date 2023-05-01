@@ -8,14 +8,15 @@ crime_df= pd.read_csv('nar_crime_updates.csv')
 #read in unemployment data
 gdp_df = pd.read_csv('GDP_2006_2019.csv')
 
-#read unemployment rates into list
+#read GDP  into list
 GDP_dict = gdp_df.to_dict('records')
 gdp = []
 for row in GDP_dict:
     gdp.append(row['GDP(Billion)'])
 
-#get count of total crime grouped by month
+#get count of narc crime aggregated by year
 crime = crime_df.groupby(['Year'])['Primary Type'].count().tolist()
+#divide annual # of crimes by population
 for i in range(len(crime)):
     if i == 0:
         crime[i] = (crime[i]/2812.0)
@@ -50,8 +51,11 @@ corr_df = pd.DataFrame()
 corr_df['crime'] = crime
 corr_df['GDP'] = gdp
 
+#print corr of Narc crime and GDP
 print(corr_df.corr())
 
+
+#plot narcotic crime rates vs GDP
 x = corr_df['crime']
 y = corr_df['GDP']
 

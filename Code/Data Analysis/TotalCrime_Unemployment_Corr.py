@@ -52,6 +52,7 @@ corr_df = pd.DataFrame()
 corr_df['crime'] = crime
 corr_df['unemployment'] = unemploy
 
+#print correlation of total crime and unemployment 
 print(corr_df.corr())
 
 x = corr_df['crime']
@@ -68,14 +69,3 @@ plt.plot(x, m*x+b, color='red')
 plt.savefig('Monthly Crime Rate vs Monthly Unemployment Rate')
 plt.clf()
 
-unemployment_group = unemployment_df.groupby('Year')
-unemployment_up = unemployment_group.first()
-print(unemployment_up)
-print(unemployment_up['Year'])
-y1 = y
-y2 = x
-x = crime_df.groupby(['Date'])['Date'].mean()
-plt.plot(x, y1, label ='Monthly Unemployment Rate')
-plt.plot(x, y2, '-.', label ='Monthly Crime Rate')
-plt.xlim([2005, 2020])
-plt.savefig('monthly line graph')
