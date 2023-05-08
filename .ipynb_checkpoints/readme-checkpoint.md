@@ -1,5 +1,19 @@
 ## Economic Impact on Crime in Chicago
+Harper Chen, Jeff Mason, Brendan McDonnell
+
+<hr> 
+
+### Decription
+
 This project aims to analyze the relationship between crime rates and economic indicators in Chicago, including unemployment rate and Gross Domestic Product (GDP) of the Chicago Metro Area. The goal is to provide valuable insights for policy development and contribute to our understanding of the factors influencing crime in the city.
+
+<hr>
+
+### Questions
+
+Do changes in the monthly unemployment rate result in changes in various crime types? (Overall, Property, Violent, Drug-Related)  
+Do changes in the GDP of the city of Chicago result in changes in different crime types?  
+Does the location within the city impact the effects of economic changes on the different crime rates?   
 
 <hr>
 
@@ -43,7 +57,36 @@ This project aims to analyze the relationship between crime rates and economic i
 <hr>
 
 ## Results
-Our analysis has revealed significant relationships between crime rates and economic indicators, such as unemployment rate and GDP. Further work includes regression analysis, and spatial analysis to better understand these relationships and their implications on policy development.
+Overall, GDP showed stronger relationships and correlation with all crime types than the monthly unemployment rate. The GDP data set was aggregated over a longer period of time which resulted in a smaller number of data points than unemployment rate. Further study will need to be conducted to confirm the relationship between GDP and crime rates in Chicago.   
+
+The monthly unemployment rate showed weak correlation to the various crime rates measured within this study, with the two strongest correlation rates associated with property crimes and drug-related crimes. Analysis considering location of the crime appeared to have an impact on property crimes within Chicago, but not drug-related crimes.   
+
+A possible explanation for the differences in results is that economic conditions have a lagging effect on certain crime rates. An initial increase in the unemployment rate may not have an immediate effect on the rate of crime, but following a period of time the changes in unemployment rate may be seen in the crime rate. The GDP results within this study provide further evidence that aggregating economic change over longer periods may help in the assessment of their effects.  
+
+
+<hr>
+
+## Application
+
+### Aid/Social Programs
+The local government can look to increase allocation of funding to drug rehabilitation and prevention programs during years of falling city GDP and increasing unemployment rates due to the increases in drug-related offenses during these periods of time.   
+Additionally, the government can look to build more robust social programs to create a safety net for individuals most affected by downturns in Chicago’s economic status. Social programs built to deal with the effects of economic downturns may help to mitigate some of the factors leading to the rises in property and drug-related crime rates during these time periods.  
+
+### Enforcement Programs
+Law enforcement agencies can use economic data to try and predict upcoming surges in property crimes and develop enforcement strategies to try and curb or prevent the surges related to economic downturns.  
+
+
+<hr>
+
+## Video Link
+
+https://youtu.be/N_I9O-yuccM
+
+<hr>
+
+## Final Report
+
+https://github.com/bmcdonnell629/CS-4502-Group-6/blob/main/Group6_EconomicImpactonCrimeinChicago_Part4.pdf 
 
 <hr>
 
