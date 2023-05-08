@@ -1,14 +1,30 @@
+Dataset was too large to export to github had to download to local machines for use from the Chicago Data Portal  
+Links listed below are dataset with constraints used to beofre export
+
+
 Link to data of city of Chicago:
 Years: 2006 - 2019
-NULL values for Dates and Crime Type removed
+NULL values for Dates, location, and Crime Type removed
 
 https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2/explore/query/SELECT%0A%20%20%60date%60%2C%0A%20%20%60block%60%2C%0A%20%20%60primary_type%60%2C%0A%20%20%60description%60%2C%0A%20%20%60location_description%60%2C%0A%20%20%60domestic%60%2C%0A%20%20%60district%60%2C%0A%20%20%60year%60%2C%0A%20%20%60location%60%2C%0A%20%20%60%3A%40computed_region_6mkv_f3dw%60%0AWHERE%0A%20%20%28%60year%60%20BETWEEN%202006%20AND%202019%29%0A%20%20AND%20%28%28%60date%60%20IS%20NOT%20NULL%29%20AND%20%28%60primary_type%60%20IS%20NOT%20NULL%29%29%0AORDER%20BY%20%60date%60%20DESC%20NULL%20LAST/page/filter
 
 
 Property crimes: Theft, Auto Theft, Robbery, Burgulary, Deceptive Practice
+Years: 2006 - 2019
+NULL values for Dates, location, and Crime Type removed
 
 https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2/explore/query/SELECT%0A%20%20%60date%60%2C%0A%20%20%60block%60%2C%0A%20%20%60primary_type%60%2C%0A%20%20%60description%60%2C%0A%20%20%60location_description%60%2C%0A%20%20%60domestic%60%2C%0A%20%20%60district%60%2C%0A%20%20%60year%60%2C%0A%20%20%60location%60%2C%0A%20%20%60%3A%40computed_region_6mkv_f3dw%60%0AWHERE%0A%20%20%28%60year%60%20BETWEEN%202006%20AND%202019%29%0A%20%20AND%20%28%28%60date%60%20IS%20NOT%20NULL%29%0A%20%20%20%20%20%20%20%20%20AND%20%28%28%60primary_type%60%20IS%20NOT%20NULL%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%28%60primary_type%60%20IN%20%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22THEFT%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22BURGLARY%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22ROBBERY%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22MOTOR%20VEHICLE%20THEFT%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22DECEPTIVE%20PRACTICE%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%29%29%29%29%0AORDER%20BY%20%60date%60%20DESC%20NULL%20LAST/page/filter
 
 
-Violent Crimes:
+Violent Crimes: Assault, Battery, Homicide, Domestic Violence, Robbery
+Years: 2006 - 2019
+NULL values for Dates, location, and Crime Type removed
+
+https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2/explore/query/SELECT%0A%20%20%60date%60%2C%0A%20%20%60block%60%2C%0A%20%20%60primary_type%60%2C%0A%20%20%60description%60%2C%0A%20%20%60location_description%60%2C%0A%20%20%60domestic%60%2C%0A%20%20%60district%60%2C%0A%20%20%60year%60%2C%0A%20%20%60location%60%2C%0A%20%20%60%3A%40computed_region_6mkv_f3dw%60%0AWHERE%0A%20%20%28%60year%60%20BETWEEN%202006%20AND%202019%29%0A%20%20AND%20%28%28%60date%60%20IS%20NOT%20NULL%29%0A%20%20%20%20%20%20%20%20%20AND%20%28%28%60primary_type%60%20IS%20NOT%20NULL%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%28%60primary_type%60%20IN%20%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22ASSAULT%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22BATTERY%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22HOMICIDE%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22DOMESTIC%20VIOLENCE%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22ROBBERY%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%29%29%29%29%0AORDER%20BY%20%60date%60%20DESC%20NULL%20LAST/page/filter 
+
+Drug-related crimes: Narcotics, Narcotic related crimes
+Years: 2006 - 2019
+NULL values for Dates, location, and Crime Type removed
+
+https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2/explore/query/SELECT%0A%20%20%60date%60%2C%0A%20%20%60block%60%2C%0A%20%20%60primary_type%60%2C%0A%20%20%60description%60%2C%0A%20%20%60location_description%60%2C%0A%20%20%60domestic%60%2C%0A%20%20%60district%60%2C%0A%20%20%60year%60%2C%0A%20%20%60location%60%2C%0A%20%20%60%3A%40computed_region_6mkv_f3dw%60%0AWHERE%0A%20%20%28%60year%60%20BETWEEN%202006%20AND%202019%29%0A%20%20AND%20%28%28%60date%60%20IS%20NOT%20NULL%29%0A%20%20%20%20%20%20%20%20%20AND%20%28%28%60primary_type%60%20IS%20NOT%20NULL%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%28%28%60primary_type%60%20IN%20%28%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22NARCOTICS%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22OTHER%20NARCOTIC%20VIOLATION%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%29%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20AND%20%28%60location%60%20IS%20NOT%20NULL%29%29%29%29%0AORDER%20BY%20%60date%60%20DESC%20NULL%20LAST/page/filter
 
