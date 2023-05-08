@@ -3,7 +3,7 @@ Harper Chen, Jeff Mason, Brendan McDonnell
 
 <hr> 
 
-### Decription
+### Description
 
 This project aims to analyze the relationship between crime rates and economic indicators in Chicago, including unemployment rate and Gross Domestic Product (GDP) of the Chicago Metro Area. The goal is to provide valuable insights for policy development and contribute to our understanding of the factors influencing crime in the city.
 
